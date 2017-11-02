@@ -16,11 +16,9 @@ body, html {
 
 h1 {
 	font-weight: 700;
-	/*color: black;*/
 }
 h1 strong {
 	font-weight: 900;
-	/*color: black;*/
 }
 h2 {
 	line-height: 20px;
@@ -51,7 +49,6 @@ a {
 }
 a:hover, a:focus {
 	text-decoration: none;
-	color: #7bc3d1;
 }
 ul, ol {
 	list-style: none;
@@ -217,6 +214,44 @@ hr {
 	padding: 80px 0;
 	background: #ffffff;
 }
+
+.item-boxes {
+	text-align: center;
+	padding: 15px;
+	border-radius: 4px;
+	margin-bottom: 15px;
+	webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+.item-boxes .icon {
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	border: 1px solid #4676fa;
+	display: inline-block;
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	webkit-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.item-boxes .icon i {
+	font-size: 30px;
+	line-height: 60px;
+	color: #4676fa;
+}
+.item-boxes h4 {
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.item-boxes:hover {
+	background: #fff;
+	box-shadow: 0 8px 48px 0 rgba(0, 0, 0, 0.15);
+}
+
 /* Portfolio Section */
 #portfolio {
 	padding: 80px 0;
@@ -374,149 +409,46 @@ ol.type li a:hover {
 
 /* Media Queries */
 @media(min-width:768px) {
-.intro {
-	height: 100%;
-	padding: 0;
-	text-align: left;
-	color: #fff;
-}
-.intro h1 {
-	font-size: 60px;
-	font-weight: 500;
-	letter-spacing: -2px;
-}
-.intro .name {
-	font-weight: 600;
-}
-.intro .intro-text {
-	max-width: 75%;
-	color: black;
-}
-.intro .intro-text p {
-	font-family: 'Lato', sans-serif;
-	color: black;
-	font-size: 20px;
-	margin-bottom: 40px;
-	margin-top: 20px;
-}
+	.intro {
+		height: 100%;
+		padding: 0;
+		text-align: left;
+		color: #fff;
+	}
+	.intro h1 {
+		font-size: 60px;
+		font-weight: 500;
+		letter-spacing: -2px;
+	}
+	.intro .name {
+		font-weight: 600;
+	}
+	.intro .intro-text {
+		max-width: 75%;
+		color: black;
+	}
+	.intro .intro-text p {
+		font-family: 'Lato', sans-serif;
+		color: black;
+		font-size: 20px;
+		margin-bottom: 40px;
+		margin-top: 20px;
+	}
 
-section {
-	padding: 120px 0;
-}
-header .intro-text {
-	padding-top: 300px;
-	padding-bottom: 200px;
-}
-.timeline:before {
-	left: 50%;
-}
-.timeline>li {
-	margin-bottom: 100px;
-	min-height: 100px;
-}
-.timeline>li .timeline-panel {
-	float: left;
-	width: 41%;
-	padding: 0 20px 20px 30px;
-	text-align: right;
-}
-.timeline>li .timeline-image {
-	left: 50%;
-	width: 100px;
-	height: 100px;
-	margin-left: -50px;
-}
-.timeline>li .timeline-image h4 {
-	margin-top: 16px;
-	line-height: 18px;
-	font-weight: 400;
-}
-.timeline>li.timeline-inverted>.timeline-panel {
-	float: right;
-	padding: 0 30px 20px 20px;
-	text-align: left;
-}
+	section {
+		padding: 120px 0;
+	}
+	header .intro-text {
+		padding-top: 300px;
+		padding-bottom: 200px;
+	}
 }
 
 @media(min-width:992px) {
-#here-me h1 {
-	margin: 10px 0 0px;
-}
-.timeline>li {
-	min-height: 150px;
-}
-.timeline>li .timeline-panel {
-	padding: 0 20px 20px;
-}
-.timeline>li .timeline-image {
-	width: 150px;
-	height: 150px;
-	margin-left: -75px;
-}
-.timeline>li .timeline-image h4 {
-	margin-top: 30px;
-	font-size: 18px;
-	line-height: 26px;
-}
-.timeline>li.timeline-inverted>.timeline-panel {
-	padding: 0 20px 20px;
-}
+	#here-me h1 {
+		margin: 10px 0 0px;
+	}
 }
 
-@media(min-width:1200px) {
-.timeline>li {
-	min-height: 170px;
-}
-.timeline>li .timeline-panel {
-	padding: 10px 20px 20px 100px;
-}
-.timeline>li .timeline-image {
-	width: 150px;
-	height: 150px;
-	margin-left: -75px;
-}
-.timeline>li .timeline-image h4 {
-	margin-top: 40px;
-	font-weight: 400;
-}
-.timeline>li.timeline-inverted>.timeline-panel {
-	padding: 10px 100px 20px 20px;
-}
-}
 
-.item-boxes {
-	text-align: center;
-	padding: 15px;
-	border-radius: 4px;
-	margin-bottom: 15px;
-	webkit-transition: all 0.3s ease 0s;
-	-moz-transition: all 0.3s ease 0s;
-	transition: all 0.3s ease 0s;
-  }
-  .item-boxes .icon {
-	width: 60px;
-	height: 60px;
-	text-align: center;
-	border: 1px solid #4676fa;
-	display: inline-block;
-	border-radius: 5px;
-	margin-top: 10px;
-	margin-bottom: 15px;
-	webkit-transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-  }
-  .item-boxes .icon i {
-	font-size: 30px;
-	line-height: 60px;
-	color: #4676fa;
-  }
-  .item-boxes h4 {
-	font-size: 20px;
-	font-weight: 600;
-	margin-bottom: 10px;
-  }
-  .item-boxes:hover {
-	background: #fff;
-	box-shadow: 0 8px 48px 0 rgba(0, 0, 0, 0.15);
-  }
+
